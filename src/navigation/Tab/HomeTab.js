@@ -1,8 +1,7 @@
-import {Text, View, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
+import {View, StyleSheet} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-
-import Screen from '../../screens/index';
+import Screen from '../../screens';
 import {tabName} from '../../configs/navigationContants';
 import {COLORS} from '../../themes';
 import EntypoIcon from 'react-native-vector-icons/Entypo';
@@ -12,10 +11,9 @@ const BottomTab = createBottomTabNavigator();
 const tabBarIcon = ({route: {name}, size, focused}) => {
   const icons = {
     HomeTab: 'home',
-    SteamTab: 'game-controller',
+    StreamTab: 'game-controller',
     ProfileTab: 'user',
   };
-
   const backgroundColor = focused ? COLORS.lightPurple : 'transparent';
 
   return (
@@ -44,7 +42,7 @@ export default class HomeTab extends Component {
           component={Screen.HomeScreen}
         />
         <BottomTab.Screen
-          name={tabName.steamTab}
+          name={tabName.streamTab}
           component={Screen.SteamScreen}
         />
         <BottomTab.Screen

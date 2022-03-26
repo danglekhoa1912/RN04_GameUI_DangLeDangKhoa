@@ -5,7 +5,7 @@ const stackName = {
 
 const tabName = {
   homeTab: 'HomeTab',
-  steamTab: 'SteamTab',
+  streamTab: 'StreamTab',
   profileTab: 'ProfileTab',
 };
 
