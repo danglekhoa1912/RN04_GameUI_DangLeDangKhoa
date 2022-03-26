@@ -101,7 +101,7 @@ class DetailScreen extends Component {
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
-            padding: 20,
+            paddingHorizontal: 20,
             alignItems: 'center',
           }}>
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
