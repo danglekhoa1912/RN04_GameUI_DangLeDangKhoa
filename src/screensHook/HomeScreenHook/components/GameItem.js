@@ -7,7 +7,7 @@ import {navigate} from '../../../navigation/NavigationWithoutProp';
 
 export default class GameItem extends Component {
   onPress = () => {
-    navigate(stackName.detailStack, {id: this.props.game.id});
+    navigate(stackName.detailStack, {id: this.props.id});
   };
   render() {
     const {
@@ -15,6 +15,7 @@ export default class GameItem extends Component {
     } = this.props;
 
     const backgroundImage = preview ? preview[0] : undefined;
+    console.log(backgroundImage);
 
     return (
       <View style={styles.container}>

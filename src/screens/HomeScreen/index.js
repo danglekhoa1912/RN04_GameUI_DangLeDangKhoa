@@ -1,12 +1,10 @@
 import {View, StyleSheet, FlatList} from 'react-native';
 import React, {Component} from 'react';
-import axios from 'axios';
 import {connect} from 'react-redux';
 
 import {BackgroundView, Text, Header} from '../../components';
 import GameItem from './components/GameItem';
 import {stackName} from '../../configs/navigationContants';
-import {mapLocalhostToIp} from '../../utils';
 import {requestListGame} from '../../redux/thunk/gameActionThunk';
 
 class HomeScreen extends Component {

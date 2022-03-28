@@ -22,7 +22,6 @@ export const requestListGame = () => {
 };
 
 export const requestGameDetail = id => {
-  console.log(id);
   return async dispatch => {
     try {
       const response = await axios({

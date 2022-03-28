@@ -5,6 +5,7 @@ import Screen from '../../screens';
 import {tabName} from '../../configs/navigationContants';
 import {COLORS} from '../../themes';
 import EntypoIcon from 'react-native-vector-icons/Entypo';
+import ScreenHook from '../../screensHook';
 
 const BottomTab = createBottomTabNavigator();
 

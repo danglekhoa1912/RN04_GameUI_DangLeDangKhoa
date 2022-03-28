@@ -9,7 +9,7 @@ import {
 import AntIcon from 'react-native-vector-icons/AntDesign';
 import {BackgroundView, Text} from '../../components';
 import {COLORS} from '../../themes';
-import {sWidth} from '../../utils';
+import {mapLocalhostToIp, sWidth} from '../../utils';
 import IonicIcon from 'react-native-vector-icons/Ionicons';
 import {connect} from 'react-redux';
 import {requestGameDetail} from '../../redux/thunk/gameActionThunk';

@@ -2,12 +2,12 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
 
-import {Text, View} from 'react-native';
 import React, {Component} from 'react';
 import HomeTab from './Tab/HomeTab';
 import {stackName} from '../configs/navigationContants';
 
-import Screen from '../screens/index';
+import ScreenHook from '../screensHook';
+import Screen from '../screens';
 
 export default class RootNavigation extends Component {
   render() {

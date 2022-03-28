@@ -5,11 +5,12 @@ import {Provider} from 'react-redux';
 import store from './src/redux/rootStore';
 import {NavigationContainer} from '@react-navigation/native';
 import RootNavigation from './src/navigation/rootNavigation';
+import {navigationRef} from './src/navigation/NavigationWithoutProp';
 
 export default function App() {
   return (
     <Provider store={store}>
-      <NavigationContainer>
+      <NavigationContainer ref={navigationRef}>
         <RootNavigation />
       </NavigationContainer>
     </Provider>
